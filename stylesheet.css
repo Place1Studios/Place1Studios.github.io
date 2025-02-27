@@ -1,0 +1,70 @@
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/baseplate-texture.png');
+    background-repeat: repeat;
+    background-size: 100px;
+    opacity: 0.02;
+    pointer-events: none;
+}
+
+.main-logo {
+    display: block;
+    width: 325px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.information-box .paragraph-container {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto
+}
+.information-box .paragraph-container * {
+    text-align: left;
+}
+
+.game {
+    background-image: var(--bg-image);
+    background-position: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.game h1,
+.game p {
+    margin: 0;
+    max-width: calc(100% - 60px);
+}
+
+.game h1 {
+    font-size: 2em;
+}
+
+.game a {
+    background-color: #335fff;
+    border: none;
+    border-radius: 8px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-image: url('/assets/play-icon.png');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
